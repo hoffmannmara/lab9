@@ -8,6 +8,14 @@ def encode(password):
     return encoded_pass
 
 
+def decode(password):
+    decoded_pass = ''
+    for i in password:
+        decoded_num = str(int(i) - 3)
+        decoded_pass += decoded_num
+    return decoded_pass
+
+
 def main():
     while True:
         print("Menu\n-------------"
@@ -26,11 +34,6 @@ def main():
             print(f"The encoded password is {encoded_password} and the original password is {decoded_password}.")
         if option == 3:
             exit()
-
-
-
-
-
 
 
 if __name__ == '__main__':
