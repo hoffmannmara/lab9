@@ -23,7 +23,7 @@ def main():
         if option == 2:
             encoded_password = encode(password)
             decoded_password = decode(password)
-            print(f"The encoded password is {encoded_password} and the original password is {decoded_password}")
+            print(f"The encoded password is {encoded_password} and the original password is {decoded_password}.")
         if option == 3:
             exit()
 
